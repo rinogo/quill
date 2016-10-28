@@ -367,7 +367,7 @@ dom = _.extend(dom,
     '18px': 4
     '24px': 5
     '32px': 6
-    '48px': 7
+    '1em': 7 #Quick hack so that the convertFontSize() call to `_.last(targets)` returns "1em".  This effectively makes "1em" the default font-size when the user presses "Enter" on a line with a font-size enabled on it.  (Essentially, to side-step what appears to be "wont fix" bugs.  See https://github.com/quilljs/quill/issues/458#issuecomment-134677932 and https://github.com/quilljs/quill/issues/567#issuecomment-173759637)
 
   KEYS:
     BACKSPACE : 8
